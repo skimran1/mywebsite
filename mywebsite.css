@@ -1,0 +1,515 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    width: 26%;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 5px;
+
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+    cursor: pointer;
+    
+   
+
+}
+.nav-list{
+      width: 70%;
+   
+      display:flex;
+      align-items: center;
+}
+.nav-list li{
+      list-style: none;
+      padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'ubuntu' sans-serif;
+
+}
+.nav-list li a:hover{
+
+    color: gray;
+
+}
+.rightNav{
+    
+    width: 45%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('img/front.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: auto;
+    margin: auto;
+    height: 80%;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.firsttHalf{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.text-big{
+     font-size: 40px;
+
+}
+.text-small{
+    font-size: 20px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    
+  
+}
+.btn-sm{
+  padding: 6px 10px;
+  vertical-align: middle;
+  font-size: 15px;
+
+
+
+  
+}
+.section{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    
+}
+.section-left{
+   flex-direction: row-reverse;
+  
+
+}
+.paras{
+    padding: 0px 65px;
+}
+.Fluid{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+.contact{
+    background-color: #f2d4b7;
+    height: 670px;
+}
+.text-center{
+    padding: 30px;
+    text-align: center;
+    font-size: xx-large;
+}
+.form{
+    max-width: 62%;
+    margin: 42px auto;
+}
+.form input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin: 14px 0;
+    padding: 5px 3px;
+
+}
+.btn-dark{
+    color: black;
+    border: 2px solid gray;
+    
+}
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin: 14px 0;
+    padding: 5px 3px;
+}
+.text-foter{
+    padding: 15px 0;
+    text-align: center;
+     font-family: 'ubuntu' sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: black;
+     
+}
+.burger{
+    display: none;
+     position: absolute;
+     cursor: pointer;
+     right: 5%;
+     top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+@media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 478px;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+  
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 69px;
+    }
+    .v-class-resp{
+        opacity: 0;
+
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+
+}
+
+.scanner h1{
+    color: #252839;
+    font-size: 4rem;
+    position: absolute;
+}
+.scanner h1::before{
+    content: "Scanning...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid red;
+    box-shadow: 0 0 10px 10px #ff0000;
+    overflow: hidden;
+    color: red;
+    animation: scan 4s linear infinite;
+
+}
+@keyframes scan{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    60%, 80%{
+        width: 100%;
+    }
+}
+
+.button{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+    background-color: #202231;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .5s;
+    border-radius: .5s;
+}
+.button *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .25s;
+
+}
+.icon{
+    opacity: 0;
+}
+.button:focus{
+    width: 30px;
+    background-color: #44c08a;
+    border-radius: 50%;
+
+}
+.button:focus .text{
+    opacity: 0;
+
+}
+.button:focus .icon{
+    opacity: 1;
+    transition-delay: .5s;
+
+}
+.card{
+    align-content: center;
+    width: 300px;
+    height: 400px;
+    background:#000;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+    margin-left: 5%;
+    margin-bottom: 10%;
+
+
+}
+.card:hover{
+    transform: scale(.9);
+
+}
+.card:hover::after{
+    height: 280px;
+}
+.card:hover .con-text p{
+    margin-bottom: 0px;
+    opacity: 1;
+}
+.card:hover img{
+    transform: scale(1.25);
+}
+.card:after{
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 20;
+    transition: all .25s ease;
+
+}
+
+.card img{
+    height: 100%;
+    z-index: 10;
+    transition: all .25s ease;
+
+}
+
+.card .con-text{
+    z-index: 30;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.card .con-text p{
+    font-size: .8rem;
+    opacity: 0;
+    margin-bottom: -170px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.card .con-text p button{
+    padding: 7px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-family: poppins;
+    font-size: .75rem;
+    outline: none;
+
+}
+.card .con-text p button:hover{
+    background:#fff;
+    color: #000;
+
+}
+
+.card2{
+    align-content: center;
+    width: 300px;
+    height: 400px;
+    background:#000;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+    margin-left: 10%;
+    margin-bottom: 10%;
+
+
+}
+.card2:hover{
+    transform: scale(.9);
+
+}
+.card2:hover::after{
+    height: 280px;
+}
+.card2:hover .con-text2 p{
+    margin-bottom: 0px;
+    opacity: 1;
+}
+.card2:hover img{
+    transform: scale(1.25);
+}
+.card2:after{
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 20;
+    transition: all .25s ease;
+
+}
+
+.card2 img{
+    height: 100%;
+    z-index: 10;
+    transition: all .25s ease;
+
+}
+
+.card2 .con-text2{
+    z-index: 30;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.card2 .con-text2 p{
+    font-size: .8rem;
+    opacity: 0;
+    margin-bottom: -170px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.card2 .con-text2 p button{
+    padding: 7px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-family: poppins;
+    font-size: .75rem;
+    outline: none;
+
+}
+.card2 .con-text2 p button:hover{
+    background:#fff;
+    color: #000;
+
+}
+.services{
+    text-align: center;
+    padding: 50px;
+}
+.our{
+    display: flex;
+    background-color: cornsilk;
+}
